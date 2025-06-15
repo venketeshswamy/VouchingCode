@@ -96,3 +96,19 @@
 2025-06-15 11:29:21,587 - OCRToolLogger - INFO - Background initialization started...
 2025-06-15 11:29:21,609 - OCRToolLogger - INFO - Background initialization finished successfully.
 2025-06-15 11:29:21,610 - OCRToolLogger - INFO - Initialization complete. Populating UI.
+2025-06-15 11:53:37,607 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 11:53:38,605 - OCRToolLogger - INFO - Background initialization started...
+2025-06-15 11:53:38,608 - OCRToolLogger - INFO - Background initialization finished successfully.
+2025-06-15 11:53:38,665 - OCRToolLogger - INFO - Initialization complete. Populating UI.
+2025-06-15 12:01:06,621 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 12:01:07,629 - OCRToolLogger - INFO - Background initialization started...
+2025-06-15 12:01:07,657 - OCRToolLogger - INFO - Background initialization finished successfully.
+2025-06-15 12:01:07,661 - OCRToolLogger - INFO - Initialization complete. Populating UI.
+2025-06-15 12:01:14,694 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 12:01:15,792 - OCRToolLogger - INFO - Background initialization started...
+2025-06-15 12:01:15,817 - OCRToolLogger - INFO - Background initialization finished successfully.
+2025-06-15 12:01:15,823 - OCRToolLogger - INFO - Initialization complete. Populating UI.
+2025-06-15 12:01:35,042 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 12:01:35,896 - OCRToolLogger - INFO - Background initialization started...
+2025-06-15 12:01:35,949 - OCRToolLogger - INFO - Background initialization finished successfully.
+2025-06-15 12:01:35,959 - OCRToolLogger - INFO - Initialization complete. Populating UI.

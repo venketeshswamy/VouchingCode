@@ -21,6 +21,7 @@ from core.ocr_processor import OcrProcessor
 from core.file_importer import FileImporter
 from utils.logger import log
 from utils.dependency_checker import get_missing_packages, check_external_dependencies
+from core.file_importer import FileImporter # Make sure this is imported
 
 class MainWindow(QMainWindow):
     """The main window of the OCR Tool application."""
@@ -154,6 +155,7 @@ class MainWindow(QMainWindow):
         else: QMessageBox.warning(self, "Dependencies Check Results", "<br><br>".join(messages))
 
     def setup_threads_post_init(self):
+        # --- OCR Processor Thread Setup (existing) ---
         self.ocr_thread = QThread()
         self.ocr_processor = OcrProcessor(self.config, self.templates)
         self.ocr_processor.moveToThread(self.ocr_thread)
@@ -162,6 +164,23 @@ class MainWindow(QMainWindow):
         self.ocr_processor.progress_updated.connect(self.update_progress_bar)
         self.ocr_processor.result_ready.connect(self.results_table.add_row)
         self.ocr_processor.error_occurred.connect(lambda msg: QMessageBox.critical(self, "Processing Error", msg))
+        
+        # --- File Importer Thread Setup (NEW and CORRECTED) ---
+        self.importer_thread = QThread()
+        # Initialize the worker without specific files for now
+        self.file_importer = FileImporter(self.session.imports_dir) 
+        self.file_importer.moveToThread(self.importer_thread)
+
+        # Connect signals from the worker to the main thread
+        self.file_importer.file_imported.connect(self.file_list.add_file)
+        self.file_importer.import_finished.connect(self.on_import_finished)
+        self.file_importer.error_occurred.connect(lambda msg: QMessageBox.critical(self, "Import Error", msg))
+
+        # When the thread starts, run the worker's process method
+        self.importer_thread.started.connect(self.file_importer.run)
+        
+        # When the worker finishes, it should signal the thread to quit
+        self.file_importer.import_finished.connect(self.importer_thread.quit)
 
     def create_actions(self):
         self.import_files_action = QAction("Import Files...", self)
@@ -212,17 +231,25 @@ class MainWindow(QMainWindow):
         if files: self.start_file_import(files)
 
     def start_file_import(self, files_to_import):
-        if self.importer_thread and self.importer_thread.isRunning(): return QMessageBox.warning(self, "Busy", "An import process is already running.")
-        self.importer_thread = QThread()
-        self.file_importer = FileImporter(files_to_import, self.session.imports_dir)
-        self.file_importer.moveToThread(self.importer_thread)
-        self.importer_thread.started.connect(self.file_importer.run)
-        self.file_importer.import_finished.connect(self.importer_thread.quit)
-        self.file_importer.file_imported.connect(self.file_list.add_file)
-        self.file_importer.error_occurred.connect(lambda msg: QMessageBox.critical(self, "Import Error", msg))
-        self.importer_thread.finished.connect(self.importer_thread.deleteLater)
-        self.file_importer.moveToThread(None)
+        """
+        Starts the file import process using the pre-configured background thread.
+        (This replaces the old version of the method entirely).
+        """
+        if self.importer_thread.isRunning():
+            QMessageBox.warning(self, "Busy", "An import process is already running.")
+            return
+            
+        # Set the list of files for the existing worker to process
+        self.file_importer.set_files_to_import(files_to_import)
+        
+        # Start the existing thread
         self.importer_thread.start()
+        
+    def on_import_finished(self):
+        """A new slot to handle when the import is complete."""
+        # This is a good place for any logic that needs to run after import,
+        # like logging or updating the status bar.
+        self.status_label.setText("Import finished.")
 
     def start_ocr_processing(self):
         if not self.file_list.get_all_paths(): return QMessageBox.warning(self, "No Files", "Please import files before processing.")
