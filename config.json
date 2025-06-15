@@ -1,0 +1,15 @@
+{
+    "poppler_path": "C:\\Program Files\\poppler-24.08.0\\Library\\bin",
+    "tesseract_cmd": "C:\\Program Files\\Tesseract-OCR\\tesseract.exe",
+    "tesseract_lang": "eng",
+    "workspace_dir": "data",
+    "default_ocr_engine": "windows",
+    "clear_cache_on_startup": false,
+    "ocr_dpi": 300,
+    "pdf_preview_dpi": 150,
+    "dynamic_box_tolerance_px": 5,
+    "template_match_threshold": 0.6,
+    "windows_ocr_lang": "en-US",
+    "tesseract_psm": "3",
+    "tesseract_oem": "3"
+}

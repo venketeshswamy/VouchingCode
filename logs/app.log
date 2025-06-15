@@ -1,0 +1,98 @@
+2025-06-15 10:31:13,613 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 10:31:36,612 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 10:32:06,436 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 10:32:50,422 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 10:33:03,267 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 10:34:56,688 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 10:34:59,591 - OCRToolLogger - INFO - Application initialized successfully.
+2025-06-15 10:35:29,274 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 10:35:37,034 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 10:35:39,567 - OCRToolLogger - INFO - Application initialized successfully.
+2025-06-15 10:39:34,247 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 10:39:34,969 - OCRToolLogger - INFO - Application initialized successfully.
+2025-06-15 10:39:35,067 - OCRToolLogger - INFO - Performing startup dependency checks...
+2025-06-15 10:39:37,035 - OCRToolLogger - INFO - Startup checks complete.
+2025-06-15 10:47:23,486 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 10:47:24,075 - OCRToolLogger - INFO - Application initialized successfully.
+2025-06-15 10:47:24,181 - OCRToolLogger - INFO - Performing startup dependency checks...
+2025-06-15 10:47:28,345 - OCRToolLogger - INFO - Startup checks complete.
+2025-06-15 10:47:49,619 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 10:47:50,044 - OCRToolLogger - INFO - Application initialized successfully.
+2025-06-15 10:47:50,180 - OCRToolLogger - INFO - Performing startup dependency checks...
+2025-06-15 10:47:52,450 - OCRToolLogger - INFO - Startup checks complete.
+2025-06-15 10:48:32,303 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 10:48:32,935 - OCRToolLogger - INFO - Application initialized successfully.
+2025-06-15 10:48:33,036 - OCRToolLogger - INFO - Performing startup dependency checks...
+2025-06-15 10:48:35,418 - OCRToolLogger - INFO - Startup checks complete.
+2025-06-15 10:49:38,313 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 10:49:38,974 - OCRToolLogger - INFO - Application initialized successfully.
+2025-06-15 10:49:39,084 - OCRToolLogger - INFO - Performing startup dependency checks...
+2025-06-15 10:49:41,479 - OCRToolLogger - INFO - Startup checks complete.
+2025-06-15 10:49:59,448 - OCRToolLogger - INFO - Configuration saved to config.json
+2025-06-15 10:49:59,512 - OCRToolLogger - INFO - Application shutting down.
+2025-06-15 10:51:10,578 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 10:51:11,085 - OCRToolLogger - INFO - Application initialized successfully.
+2025-06-15 10:51:11,185 - OCRToolLogger - INFO - Performing startup dependency checks...
+2025-06-15 10:51:13,904 - OCRToolLogger - INFO - Startup checks complete.
+2025-06-15 10:51:28,146 - OCRToolLogger - INFO - Configuration saved to config.json
+2025-06-15 10:51:28,146 - OCRToolLogger - INFO - Application shutting down.
+2025-06-15 10:55:35,906 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 10:55:36,590 - OCRToolLogger - INFO - Application initialized successfully.
+2025-06-15 10:55:36,744 - OCRToolLogger - INFO - Performing startup dependency checks...
+2025-06-15 10:55:38,424 - OCRToolLogger - INFO - Startup checks complete.
+2025-06-15 10:56:02,062 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 10:56:02,752 - OCRToolLogger - INFO - Application initialized successfully.
+2025-06-15 10:56:02,858 - OCRToolLogger - INFO - Performing startup dependency checks...
+2025-06-15 10:56:05,216 - OCRToolLogger - INFO - Startup checks complete.
+2025-06-15 10:56:33,229 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 10:56:33,977 - OCRToolLogger - INFO - Application initialized successfully.
+2025-06-15 10:56:34,084 - OCRToolLogger - INFO - Performing startup dependency checks...
+2025-06-15 10:56:35,267 - OCRToolLogger - INFO - Startup checks complete.
+2025-06-15 11:00:59,676 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 11:01:00,383 - OCRToolLogger - INFO - Application initialized successfully.
+2025-06-15 11:01:23,633 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 11:01:24,161 - OCRToolLogger - INFO - Application initialized successfully.
+2025-06-15 11:01:38,503 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 11:01:39,073 - OCRToolLogger - INFO - Application initialized successfully.
+2025-06-15 11:06:14,967 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 11:06:15,396 - OCRToolLogger - INFO - Application initialized successfully. Ready for user interaction.
+2025-06-15 11:06:28,987 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 11:06:29,519 - OCRToolLogger - INFO - Application initialized successfully. Ready for user interaction.
+2025-06-15 11:06:33,464 - OCRToolLogger - INFO - Performing manual dependency check...
+2025-06-15 11:06:44,765 - OCRToolLogger - INFO - Performing manual dependency check...
+2025-06-15 11:08:22,342 - OCRToolLogger - INFO - Configuration saved to config.json
+2025-06-15 11:08:22,358 - OCRToolLogger - INFO - Application shutting down.
+2025-06-15 11:08:24,896 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 11:08:25,344 - OCRToolLogger - INFO - Application initialized successfully. Ready for user interaction.
+2025-06-15 11:08:27,256 - OCRToolLogger - INFO - Performing manual dependency check...
+2025-06-15 11:12:22,512 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 11:12:22,971 - OCRToolLogger - INFO - Application initialized successfully. Ready for user interaction.
+2025-06-15 11:12:36,747 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 11:12:37,461 - OCRToolLogger - INFO - Application initialized successfully. Ready for user interaction.
+2025-06-15 11:12:49,148 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 11:12:49,591 - OCRToolLogger - INFO - Application initialized successfully. Ready for user interaction.
+2025-06-15 11:12:55,109 - OCRToolLogger - INFO - Configuration saved to config.json
+2025-06-15 11:12:55,109 - OCRToolLogger - INFO - Application shutting down.
+2025-06-15 11:17:07,351 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 11:17:07,708 - OCRToolLogger - INFO - Application initialized successfully. Ready for user interaction.
+2025-06-15 11:17:30,826 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 11:17:31,150 - OCRToolLogger - INFO - Application initialized successfully. Ready for user interaction.
+2025-06-15 11:17:34,279 - OCRToolLogger - INFO - Performing manual dependency check...
+2025-06-15 11:17:46,688 - OCRToolLogger - INFO - Configuration saved to config.json
+2025-06-15 11:17:46,750 - OCRToolLogger - INFO - Application shutting down.
+2025-06-15 11:19:44,239 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 11:19:44,550 - OCRToolLogger - INFO - Application initialized successfully. Ready for user interaction.
+2025-06-15 11:23:13,229 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 11:23:13,912 - OCRToolLogger - INFO - Application initialized successfully. Ready for user interaction.
+2025-06-15 11:28:34,983 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 11:28:35,653 - OCRToolLogger - INFO - Background initialization started...
+2025-06-15 11:28:35,653 - OCRToolLogger - INFO - Background initialization finished successfully.
+2025-06-15 11:28:35,673 - OCRToolLogger - INFO - Initialization complete. Populating UI.
+2025-06-15 11:28:53,920 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 11:28:54,661 - OCRToolLogger - INFO - Background initialization started...
+2025-06-15 11:28:54,663 - OCRToolLogger - INFO - Background initialization finished successfully.
+2025-06-15 11:28:54,676 - OCRToolLogger - INFO - Initialization complete. Populating UI.
+2025-06-15 11:29:20,898 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 11:29:21,587 - OCRToolLogger - INFO - Background initialization started...
+2025-06-15 11:29:21,609 - OCRToolLogger - INFO - Background initialization finished successfully.
+2025-06-15 11:29:21,610 - OCRToolLogger - INFO - Initialization complete. Populating UI.
