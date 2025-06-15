@@ -112,3 +112,7 @@
 2025-06-15 12:01:35,896 - OCRToolLogger - INFO - Background initialization started...
 2025-06-15 12:01:35,949 - OCRToolLogger - INFO - Background initialization finished successfully.
 2025-06-15 12:01:35,959 - OCRToolLogger - INFO - Initialization complete. Populating UI.
+2025-06-15 12:04:25,778 - OCRToolLogger - INFO - --- Application Starting ---
+2025-06-15 12:04:26,720 - OCRToolLogger - INFO - Background initialization started...
+2025-06-15 12:04:26,751 - OCRToolLogger - INFO - Background initialization finished successfully.
+2025-06-15 12:04:26,756 - OCRToolLogger - INFO - Initialization complete. Populating UI.
