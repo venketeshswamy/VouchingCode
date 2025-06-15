@@ -11,11 +11,21 @@ class FileImporter(QObject):
     in a background thread to prevent GUI freezes. This worker is
     designed to be persistent and reused for multiple import tasks.
     """
-    file_imported = pyqtSignal(str)  # Emits the path of the newly imported file
-    import_finished = pyqtSignal()   # Emits when all files are processed
-    error_occurred = pyqtSignal(str) # Emits on a file copy error
+    # Signal to emit the path of each successfully imported file
+    file_imported = pyqtSignal(str)
+    
+    # Signal to emit when the entire batch of files has been processed
+    import_finished = pyqtSignal()
+    
+    # Signal to emit if an error occurs during a file copy operation
+    error_occurred = pyqtSignal(str)
 
     def __init__(self, imports_dir):
+        """
+        Initializes the worker.
+        Args:
+            imports_dir (str): The target directory to copy files into.
+        """
         super().__init__()
         self.original_paths = []
         self.imports_dir = imports_dir
@@ -23,8 +33,8 @@ class FileImporter(QObject):
 
     def set_files_to_import(self, file_paths: list):
         """
-        Sets the list of files for the next import run.
-        This method is called from the main thread before starting the worker.
+        Sets the list of files for the next import run. This method is
+        called from the main thread before starting the worker's task.
         """
         self.original_paths = file_paths
 
@@ -37,8 +47,8 @@ class FileImporter(QObject):
     @pyqtSlot()
     def run(self):
         """
-        Copies the files to the import directory. This is the main task
-        that runs in the background thread.
+        The main task that runs in the background thread. It iterates through
+        the file paths and copies them to the import directory.
         """
         # Reset the stop flag for the new run
         self.is_stopped = False
@@ -57,13 +67,13 @@ class FileImporter(QObject):
             local_copy_path = os.path.join(self.imports_dir, base_name)
             
             try:
-                # Use copy2 to preserve metadata
+                # Use copy2 to preserve metadata like modification time
                 shutil.copy2(original_path, local_copy_path)
                 log.info(f"Copied '{base_name}' to imports directory.")
                 # Signal that one file has been successfully imported
                 self.file_imported.emit(local_copy_path)
             except Exception as e:
-                log.error(f"Could not copy '{base_name}' to imports directory: {e}")
+                log.error(f"Could not copy '{base_name}' to imports directory: {e}", exc_info=True)
                 self.error_occurred.emit(f"Could not import '{base_name}': {e}")
         
         log.info("File import process finished.")
